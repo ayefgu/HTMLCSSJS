@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <style>
+        /* Base styles (1025px and above) */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .gallery-item {
+            flex: 1 1 calc(33.333% - 40px);
+            min-width: 200px;
+            box-sizing: border-box;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px; /* rounded corners */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        /* Medium screens (769px - 1024px) */
+        @media (max-width: 1024px) {
+            .gallery-item {
+                flex: 1 1 calc(50% - 30px);
+            }
+        }
+        
+        /* Small screens (768px and below) */
+        @media (max-width: 768px) {
+            .gallery {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .gallery-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="raya.img.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="feya.img.jpg" alt="Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="cat.img.jpg" alt="Image 3">
+        </div>
+    </div>
+</body>
+</html>

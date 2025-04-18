@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리 팀 연습</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background: #f5f5f5;
+        }
+    
+        h1 {
+          text-align: center;
+          margin: 2rem 0;
+        }
+    
+        #container {
+          padding: 1rem;
+        }
+    
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 2em 1em;
+          text-align: center;
+        }
+    
+        .column {
+          flex: 0 0 100%;
+          max-width: 100%;
+          padding: 1em 0;
+        }
+    
+        .card {
+          background-color: #fff;
+          color: #222;
+          padding: 3.5em 1em;
+          border-radius: 0.6em;
+          box-shadow: 0 0 4px rgba(25, 20, 58, 0.1);
+          cursor: pointer;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          max-width: 300px;
+        }
+    
+        .img-container {
+          width: 80px;
+          height: 80px;
+          margin-bottom: 1rem;
+          overflow: hidden;
+          border-radius: 50%;
+          background-color: #ddd;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+    
+        .img-container img {
+          width: 100%;
+          height: auto;
+        }
+    
+        .card h2 {
+          margin: 0.5rem 0 0.2rem;
+        }
+    
+        .card p {
+          font-weight: 300;
+          text-transform: uppercase;
+          margin: 0.5em 0em;
+          letter-spacing: 2px;
+        }
+    
+        .social {
+          width: 50%;
+          margin: auto;
+          display: flex;
+          justify-content: space-between;
+          margin-top: 1rem;
+        }
+    
+        .social a {
+          text-decoration: none;
+          font-size: 1.2rem;
+          color: #222;
+        }
+        @media screen and (min-width: 1024px) {
+          #container {
+            padding: 1em;
+          }
+    
+          .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 2em 1em;
+            text-align: center;
+          }
+    
+          .column {
+            flex: 0 0 33.33%;
+            max-width: 33.33%;
+            padding: 0 1em;
+          }
+    
+          .card {
+            padding: 5em 1em;
+          }
+        }
+      </style>
+    </head>
+    <body>
+    
+      <h1>Our Team</h1>
+    
+      <div id="container">
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <div class="img-container">
+                <img src="raya.img.jpg" alt="Team Member">
+              </div>
+              <h2>Raya</h2>
+              <p>Founder</p>
+              <div class="social">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="column">
+            <div class="card">
+              <div class="img-container">
+                <img src="feya.img.jpg" alt="Team Member">
+              </div>
+              <h2>Feya</h2>
+              <p>Developer</p>
+              <div class="social">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="column">
+            <div class="card">
+              <div class="img-container">
+                <img src="cat.img.jpg" alt="Team Member">
+              </div>
+              <h2>Cat</h2>
+              <p>Designer</p>
+              <div class="social">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    
+    </body>
+    </html>
